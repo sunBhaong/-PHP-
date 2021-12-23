@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			body{
+				margin: 0;
+				font-family: "microsoft yahei";
+				background: url(images/bg.png);
+			}
+			.box{
+				width: 1001px;
+				margin: 0 auto;
+			}
+			.top{
+				height: 179px;
+				background: url(images/top.jpg);
+				position: relative;
+			}
+			.title{
+				padding-left: 60px;
+				color: #000000;
+				font-size: 40px;
+				letter-spacing: 5px;
+				line-height: 160px;
+			}
+			.nav{
+				position: absolute;
+				right: 0;
+				bottom: 6px;
+				
+			}
+			.nav a{
+				color: #000000;
+				padding: 6px 12px;
+				background: #9cb945;
+				text-decoration: none;
+			}
+			.nav a:hover{
+				color: #FFFFFF;
+			}
+			.main{
+				padding-bottom: 10px;
+				background: #FFFFFF;
+			}
+			.news-list{
+				background: skyblue;
+				color: #FFFFFF;
+				padding-top: 5px;
+				padding-bottom: 5px;
+				border: 2px solid #FFFFFF;
+			}
+			.news-list th{
+				border-bottom: #00088cc;
+				color: #FFFFFF;
+				padding-top: 5px;
+				padding-bottom: 5px;
+				border: 2px solid #FFFFFF;
+			}
+			.news-list td{
+				border-bottom: 2px dashed #DCDCDC;
+				padding: 8px;
+			}
+			.news-list .news-title{
+				text-indent: 20px;
+			}
+			.center{
+				text-align: center;
+			}
+			.news-time{
+				text-align: center;
+				margin-top: 10px;
+				
+			}
+			.news-content{
+				width: 70%;
+				margin: 20px auto;
+				
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div class="top">
+				<div class="title">新闻发布系统</div>
+				<div class="nav"><a href="">返回列表</a></div>
+			</div>
+		</div>
+		<div class="main">
+			<div class="news-title"><?php echo $data['title'];?></div>
+			<div class="news-time"><?php echo $data['addtime'];?></div>
+			<div class="news-content"><?php echo $data['contenet'];?></div>
+		</div>
+	</body>
+</html>
